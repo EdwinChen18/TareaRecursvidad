@@ -43,5 +43,35 @@ public class Recursividad {
                 return numBinarioR(binario / 10);
             }//Si es 1 o 0 se llama con el resultado y divide otra vez 
         }// Repite el proceso hasta que sea 1 o 0 o que de diferente
-    } 
+    }
+    public double calcExponencial(int n, int x){
+        double result=0;
+        for(int i=0;i<n;i++){
+            result=result+(Math.pow(x, i)/ factorial(i));
+        }
+        return result;
+    }
+    public double factorial(int num){
+        double result=1;
+        for(int i=1;i<num;i++){
+            result= result*i;
+        }
+        return result;
+    }
+    
+    public double calcExponencialR(int n, int x){
+        if (n<x){
+            return 0;
+        }
+        double result =(Math.pow(x, n)/factorial(n));
+        double result2= calcExponencialR(n-1, x);
+        return result + result2;
+    }
+    /*public double factorialR(int num){
+        if (num<0){
+            return 1;
+        }else{
+            return num*factorialR(num-1);
+        }
+    }*/
 }
