@@ -7,7 +7,7 @@ public class TareaRecursivo {
     public static void main(String[] args) {
         
 //Eliminar Vocales        
-        /*Recursividad voc=new Recursividad();
+        Recursividad voc=new Recursividad();
         String str= JOptionPane.showInputDialog(null, "Digite una oracion: ");
         //LA funcion toma el string como un argumento 
         String oracion=voc.eliminVocales(str);//La guardamos  
@@ -16,7 +16,7 @@ public class TareaRecursivo {
         
 //Suma numeros naturales 
         Recursividad sum=new Recursividad();
-        int n=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite un numero: ")); 
+        int n=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite un numero para suma natural: ")); 
         //guardamos el resultado en una variable
         int resultado=sum.sumaRecursiva(n);//guardamos el resultado en una variable
         JOptionPane.showMessageDialog(null, "La suma de los numeros es: "+resultado);
@@ -31,10 +31,10 @@ public class TareaRecursivo {
         }else{
             JOptionPane.showMessageDialog(null, "El numero: "+binario+" no es binario");
         }
-        num.numBinarioR(binario);*/
+        num.numBinarioR(binario);
         
 //Exponecial y Factorial
-        Recursividad numE=new Recursividad();
+        /*Recursividad numE=new Recursividad();
         int i=4;
         int x=3;
         double result=numE.calcExponencial(i, x);
@@ -46,7 +46,7 @@ public class TareaRecursivo {
         int y=3;
         double resultR=numF.calcExponencialR(t, y);
         JOptionPane.showMessageDialog(null, "Resultado de "+t+""
-                + "elevado al "+y+" es: "+resultR);
+                + "elevado al "+y+" es: "+resultR);*/
         
     }
     

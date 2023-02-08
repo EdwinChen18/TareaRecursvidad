@@ -19,8 +19,7 @@ public class Recursividad {
     es una vocal la funcion returnea ese caracter concatenado con el resultado 
     del substring recursivo
     }*/
-    
-    }
+    }   
     
     public int sumaRecursiva(int n){
 
@@ -60,12 +59,14 @@ public class Recursividad {
     }
     
     public double calcExponencialR(int n, int x){
-        if (n<x){
+        if (n<x){//
             return 0;
         }
         double result =(Math.pow(x, n)/factorial(n));
-        double result2= calcExponencialR(n-1, x);
-        return result + result2;
+        //Calcula result dividiendo el resultado del exponente con el factorial
+        double result2= calcExponencialR(n-1, x);//se llama asimismo como argumento 
+        //Se corre otra vez con el valor de n menos 1 y se guarda en result2
+        return result + result2;//Se suma los resultados 
     }
     /*public double factorialR(int num){
         if (num<0){
